@@ -55,9 +55,9 @@ const ProductsSection = ({ cart, setCart }) => {
   };
 
   return (
-    <section className="py-20 bg-base-100">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* toggle buttons*/}
+      <section className="py-20 bg-base-100">
+       <div className="max-w-7xl mx-auto px-6">
+        {/* toggle buttons and header*/}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             Premium Digital Tools
@@ -83,7 +83,7 @@ const ProductsSection = ({ cart, setCart }) => {
         </div>
 
         {/* Products List */}
-        {activeTab === "products" && (
+          {activeTab === "products" && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map(product => {
               const Icon = FiIcons[product.icon];
@@ -109,12 +109,12 @@ const ProductsSection = ({ cart, setCart }) => {
                 </div>
               );
             })}
-          </div>
+             </div>
         )}
 
         {/* Cart List */}
-        {activeTab === "cart" && (
-          <div className="max-w-2xl mx-auto space-y-4">
+          {activeTab === "cart" && (
+           <div className="max-w-2xl mx-auto space-y-4">
             {cart.length === 0 ? (
               <p className="text-center text-gray-500">Your cart is empty 🛒</p>
             ) : (
@@ -147,11 +147,11 @@ const ProductsSection = ({ cart, setCart }) => {
                 </button>
               </>
             )}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-};
+           </div>
+         )}
+        </div>
+     </section>
+    );
+ };
 
 export default ProductsSection;
