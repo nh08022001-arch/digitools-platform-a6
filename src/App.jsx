@@ -7,6 +7,8 @@ import ProductsSection from './components/ProductsSection';
 import StepsSection from './components/StepsSection';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PricingSection from './components/PricingSection';
+import Action from './components/Action';
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
         theme="colored"
       />
       <StepsSection/>
+      <PricingSection/>
+      <Action/>
     </>
   );
 }
