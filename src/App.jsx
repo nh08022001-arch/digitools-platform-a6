@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PricingSection from './components/PricingSection';
 import Action from './components/Action';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <StepsSection/>
       <PricingSection/>
       <Action/>
+      <Footer/>
     </>
   );
 }
